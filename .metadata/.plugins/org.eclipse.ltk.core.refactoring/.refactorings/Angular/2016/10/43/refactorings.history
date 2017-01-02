@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Angular/WebContent/html/TempTest.html&apos; to &apos;temp&apos;" description="Rename resource &apos;TempTest.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/html/TempTest.html" name="temp" stamp="1476621664784" updateReferences="true"/>
+</session>

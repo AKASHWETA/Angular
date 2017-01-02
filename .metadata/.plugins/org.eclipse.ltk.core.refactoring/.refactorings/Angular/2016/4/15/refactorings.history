@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Angular/WebContent/js/databinding/ invoice2.js&apos; to &apos;invoice2.js&apos;" description="Rename resource &apos; invoice2.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/js/databinding/ invoice2.js" name="invoice2.js" stamp="1459740067140" updateReferences="true"/>
+</session>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="que1App">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+</head>
+<body class="container" ng-controller="que1Controller">
+        <input type="button" value="Get Data" ng-click="getData()" />
+         <br />
+        <p> {{message}} </p><br />
+   		<p>  {{reason}}</p> <br />
+    <script>
+    var myApp = angular.module('spicyApp2', []);
+
+    myApp.controller('SpicyController', ['$scope', function($scope) {
+        $scope.customSpice = "wasabi";
+        $scope.spice = 'very';
+
+        $scope.spicy = function(spice) {
+            $scope.spice = spice;
+        };
+    }]);
+
+    </script>
+</body>
+</html>

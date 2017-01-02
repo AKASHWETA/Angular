@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="que2App">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+</head>
+<body ng-app="spicyApp2">
+  <div ng-controller="qu2Controller">
+ <input ng-model="customNumber">
+ <button ng-click="chooseNumber(customNumber)">Custom spice</button>
+ <p>The number is {{changeNumber}} </p>
+</div>
+
+    <script>
+    var myApp = angular.module('que2App', []);
+
+    myApp.controller('qu2Controller', ['$scope', function($scope) {
+        $scope.customNumber = "enter numbers here";
+
+        $scope.chooseNumber = function(spice) {
+            $scope.changeNumber = spice.slice(4,9);
+        };
+    }]);
+
+    </script>
+</body>
+</html>

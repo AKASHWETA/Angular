@@ -1,0 +1,7 @@
+INDEX VERSION 1.127
+C:\MYAPP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1510956306.index
+\RESTfulExample\src\main\java
+C:\MYAPP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2779229780.index
+\RESTfulExample\src\main\java
+C:\MYAPP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2002516686.index
+\Angular-Demo\src\main\java

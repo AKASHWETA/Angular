@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="que1App">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+</head>
+<body class="container" ng-controller="que1Controller">
+        <input type="button" value="Get Data" ng-click="getData()" />
+         <br />
+        <p> {{message}} </p><br />
+   		<p>  {{reason}}</p> <br />
+    <script>
+        var app = angular.module('que1App', []);
+        app.config(function ($provide) {
+            $provide.decorator('$exceptionHandler', function ($delegate, $injector) {
+                return function (exception, cause) {
+                	var $rootScope = $injector.get("$rootScope");
+                	$rootScope.message="There has been an error: the error is:"+exception;
+                	$rootScope.reason="Please call helpdesk";
+                    $delegate(exception, cause);
+                };
+            });
+        });
+
+        app.controller("que1Controller", function ($scope) {
+            var onSuccess = function (response) {
+                $scope.status = response.status;
+                $scope.data = response.data;
+            };
+
+            var onError = function (response) {
+                $scope.status = response.status;
+                $scope.data = response.data;
+            }
+            $scope.getData = function () {
+                $http.get("/getdata").then(onSuccess, onError);
+
+            };
+        });
+
+    </script>
+</body>
+</html>

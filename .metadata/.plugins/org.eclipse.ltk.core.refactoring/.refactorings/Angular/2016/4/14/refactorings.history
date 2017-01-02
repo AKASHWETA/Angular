@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Angular/WebContent/invoce.html&apos; to &apos;invoice.html&apos;" description="Rename resource &apos;invoce.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/invoce.html" name="invoice.html" stamp="1459483964261" updateReferences="true"/>
+</session>
